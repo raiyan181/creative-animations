@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            background-color: rgb(70, 58, 58);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            margin-top: 50px;
+        }
+.d1{
+    background-color: #fcec94;
+    opacity: 0.9;
+    border-radius: 25%;
+    box-shadow: 0 0 20px red;
+    width: 170px;
+    height: 170px;
+    margin-top: 170px;
+    animation: scale 4s linear 0.5s infinite running alternate backwards;
+    display: block;
+}
+.d2{
+    background-color: #28dfff;
+    width: 170px;
+    height: 170px;
+    opacity: 0.8;
+    border-radius: 25%;
+    box-shadow: 0 0 13px #ffffff;
+    margin-top: -80px;
+    margin-left: 110px;
+    animation: rotate 5s linear infinite running alternate backwards;
+    display: flex;
+}
+.d3{
+    background-color: #17ff3d;
+    opacity: 0.8;
+    box-shadow: 0 0 13px #ffffff;
+    height: 170px;
+    width: 170px;
+    border-radius: 25%;
+    margin-top: -169px;
+    margin-left: -110px;
+    animation: rotate 5s linear infinite running alternate backwards;
+    display: flex;
+}
+.d4{
+    background-color: pink;
+    opacity: 0.8;
+    box-shadow: 0 0 13px #ffffff;
+    border-radius: 25%;
+    height: 170px;
+    width: 170px;
+    margin-top: -370px;
+    margin-left: 110px;
+    animation: rotate 5s linear infinite running alternate backwards;
+    display: flex;
+}
+.d5{
+    background-color: crimson;
+    display: flex;
+    opacity: 0.8;
+    border-radius: 25%;
+    box-shadow: 0 0 13px #ffffff;
+    height: 170px;
+    width: 170px;
+    margin-top: -170px;
+    margin-left: -110px;
+    animation: rotate 5s linear infinite running alternate backwards;
+}
+    @keyframes rotate{
+        0%{ transform: rotate(0);}
+        25%{ transform: rotate(45deg);}
+        50%{ transform: rotate(90deg);}
+        75%{ transform: rotate(180deg);}
+        100%{ transform: 360deg;}
+    }
+    @keyframes scale{
+        0%{transform: scale(1); background-color: #fcec94;}
+        25%{ transform: scale(1.1); background-color:crimson;}
+        50%{transform: scale(1.2); background-color: #28dfff;}
+        75%{transform: scale(1.3); background-color:#17ff3d;}
+        100%{transform: scale(1.4); background-color: #fcec94;}
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="d5"></div>
+    </div>
+</body>
+</html>
